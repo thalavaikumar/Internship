@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        let btn = document.getElementById("btn");{
+        btn.style.transform="translate X(-5px)";
+        setTimeout(() => {
+            btn.style.transform="translate X(5px)";},100);
+            setTimeout(()=>{
+                btn.style.transform="translate X(0)";
+            },200);
+        };
+    </script>
+</body>
+</html>

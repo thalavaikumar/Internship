@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do List Application</title>
+</head>
+<body>
+    <h2>To Do List</h2>
+    <input type="text" id="task" placeholder="Enter task">
+    <button onclick="add()">Add</button>
+    <ul id="list"></ul>
+<script>
+        function add() {
+            let task = document.getElementById("task").value;
+    if (task === "") {
+                alert("Please enter a task");
+               return;
+            }
+            let li = document.createElement("li");
+            li.textContent = task;
+            document.getElementById("list").appendChild(li);
+            document.getElementById("task").value = "";
+        }
+    </script>
+</body>
+</html>

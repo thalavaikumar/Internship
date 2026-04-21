@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openPop()">Open</button>
+    <div id="popup" style="display: name; background: lightgray; padding: 20px; width: 200px;">
+        <p>Hello Popup!</p>
+        <button onclick="closePopup()">Close</button>
+        <div>
+            <script>
+                function openPop(){
+                    document.getElementById("popup").style.display="block"};
+                function closePop(){
+                    document.getElementById("popup").style.display="none"};
+            </script>
+        </div>
+    </div>
+</body>
+</html>
